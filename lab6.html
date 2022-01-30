@@ -1,0 +1,88 @@
+<html>  
+<head>
+  <style> 
+    input[type=button] {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 10px;
+      text-decoration: none;
+      margin: 2px 2px;
+      cursor: pointer;
+    }
+    </style>
+</head>  
+<body>
+ SET THE COLOR<br><br><br>  
+        <select id="color" onchange="display()">  
+                <option value="Select Color">Select Color</option>  
+                <option value="#F08080">LightCoral</option>  
+                <option value="#DDA0DD">Plum</option>  
+                <option value="#90EE90">PaleGreen</option>
+                <option value="#BC8F8F">RosyBrown</option>  
+                <option value="#8FBC8B">DarkSeaGreen</option>  
+                 
+            </select> <br><br><br><br><br>
+            Fill THE FORM<br><br><br> <Form>
+            <table><tr>
+            Name:&nbsp;</tr><input type="text" id="name"><br></tr><br>
+            Email:&nbsp;</tr><input type="email" id="email"><br></tr><br>
+            Course:&nbsp;</tr><input type="text" id="course"><br></tr> <br> </table></Form>
+        <input type="button" value="Set Cookie" onclick="setCookie()">  
+        <input type="button" value="Get Cookie" onclick="getCookie()"> 
+        <input type="button" value="Delete Cookie" onclick="deleteCookie()"> 
+         
+        
+            <script type="text/javascript">  
+                function display()  
+                {  
+                    var value = document.getElementById("color").value;  
+                    if (value != "Select Color")  
+                    {  
+                        document.bgColor = value;  
+                        document.cookie = "color=" + value;  
+                    }  
+                }  
+                window.onload = function ()  
+                {  
+                    if (document.cookie.length != 0)  
+                    {  
+                        var array = document.cookie.split("=");  
+                        document.getElementById("color").value = array[1];  
+                        document.bgColor = array[1];  
+                    }  
+                }  
+                
+   
+    function setCookie()  
+    {  
+//Declaring 3 key-value pairs  
+        var info="Name="+ document.getElementById("name").value+";Email="+document.getElementById("email").value+";Course="+document.getElementById("course").value;  
+//Providing all 3 key-value pairs to a single cookie  
+        document.cookie=info;  
+    }  
+  
+    function getCookie()  
+    {  
+        if(document.cookie.length!=0)  
+        {  
+       //Invoking key-value pair stored in a cookie  
+        alert(document.cookie);  
+        }  
+        else  
+        {  
+        alert("Cookie not available")  
+        } 
+      }
+    function deleteCookie()  
+   {  
+    cookie=document.cookie;
+    document.cookie=cookie+";max-age=0";  
+      
+    alert("Cookie is deleted");  
+   }
+
+                  
+            </script>  
+</body>  
+</html>
