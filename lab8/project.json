@@ -1,4 +1,4 @@
-{"package":[
+{"project":[
     {"id":1,  "date": "September 19,2022", "duration":2,"price": 3000, "Proj_city":"bangalore"},
     {"id":2, "date":"January 20,2022", "duration":3,"price": 3500, "Proj_city":"mysore"},
     {"id":3, "date":"March 03,2022", "duration":4,"price": 2500, "Proj_city":"bangalore"},
