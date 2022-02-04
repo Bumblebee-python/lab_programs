@@ -1,0 +1,12 @@
+{"package":[
+    {"id":1,  "date": "September 19,2022", "duration":2,"price": 3000, "Proj_city":"bangalore"},
+    {"id":2, "date":"January 20,2022", "duration":3,"price": 3500, "Proj_city":"mysore"},
+    {"id":3, "date":"March 03,2022", "duration":4,"price": 2500, "Proj_city":"bangalore"},
+    {"id":4, "date":"June 11,2022", "duration":5,"price": 3500, "Proj_city":"delhi"},
+    {"id":5, "date":"July 02,2022", "duration":2,"price": 4000, "Proj_city":"mumbai"},
+    {"id":6, "date":"August 15,2022", "duration":4,"price": 5000, "Proj_city":"mysore"},
+    {"id":7, "date":"September 18,2022", "duration":7,"price": 4500, "Proj_city":"Mangalore"},
+    {"id":8, "date":"March 11,2022", "duration":3,"price": 3500, "Proj_city":"Bangalore"},
+    {"id":9, "date":"September 16,2022", "duration":5,"price": 4500, "Proj_city":"Ooty"},
+    {"id":10, "date":"September 01,2022", "duration":7,"price": 5000, "Proj_city":"Shimla"}
+]}
